@@ -9,6 +9,9 @@
     <link href="<?=$view->getThemePath()?>/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=$view->getThemePath()?>/css/carousel.css" rel="stylesheet">
     <link href="<?=$view->getThemePath()?>/css/admin-fixes.css" rel="stylesheet">
+
+    <!-- Test with .less file -->
+    <link href="<?=$view->getStylesheet('main.less')?>" rel='stylesheet'>
 </head>
 <body>
 
