@@ -4,6 +4,8 @@
 # Ignore concrete5 stuff
 public/concrete
 public/application/files
+public/application/themes/forza-digital/css/build.css
+public/application/themes/forza-digital/js/build.js
 
 # Ignore developer stuff
 .idea
