@@ -3,10 +3,15 @@ let mix = require('laravel-mix');
 
 mix
     // Simple ES6 JavaScript
-    .babel('resources/js/main.js', 'public/application/js/main.js')
+    .babel('resources/js/main.js', 'public/application/themes/forza-digital/js/build.js')
 
     // Less CSS Compilation
-    .less('resources/css/main.less', 'public/application/css/main.css');
+    .sass('resources/scss/main.scss', 'public/application/themes/forza-digital/css/build.css')
+        .options({
+            postCss: [
+                require('postcss-css-variables')()
+            ]
+        });
 
 // Other options:
 // mix.sass, mix.js, mix.scripts, mix.stylus, mix.styles, mix.react, mix.webpackConfig, mix.copy, mix.copyDirectory,
@@ -20,5 +25,9 @@ mix
 
 mix.browserSync({
 	https: true,
+    files: [
+        'resources/scss/**/*.scss',
+        'resources/js/**/*.js'
+    ],
     proxy: 'https://o.forza-digital.nl'
 })

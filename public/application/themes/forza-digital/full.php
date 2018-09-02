@@ -6,12 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="<?=$view->getThemePath()?>/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?=$view->getThemePath()?>/css/carousel.css" rel="stylesheet">
-    <link href="<?=$view->getThemePath()?>/css/admin-fixes.css" rel="stylesheet">
-
-    <!-- Test with .less file -->
-    <link href="<?=$view->getStylesheet('main.less')?>" rel='stylesheet'>
+    <link href="<?=$view->getThemePath()?>/css/build.css" rel="stylesheet">
 </head>
 <body>
 
@@ -36,12 +31,7 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<?=$view->getThemePath()?>/js/popper.min.js"></script>
-    <script src="<?=$view->getThemePath()?>/js/bootstrap.min.js"></script>
-
+    <script src="<?=$view->getThemePath()?>/js/build.js"></script>
     <?php View::element('footer_required'); ?>
 </body>
 </html>
