@@ -3,9 +3,9 @@ let mix = require('laravel-mix');
 
 mix
     // Simple ES6 JavaScript
-    .babel('resources/js/main.js', 'public/application/themes/forza-digital/js/build.js')
+    .js('resources/js/main.js', 'public/application/themes/forza-digital/js/build.js')
 
-    // Less CSS Compilation
+    // Sass CSS Compilation
     .sass('resources/scss/main.scss', 'public/application/themes/forza-digital/css/build.css')
         .options({
             postCss: [
