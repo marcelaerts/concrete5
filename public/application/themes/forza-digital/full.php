@@ -11,10 +11,10 @@
 <body>
 
     <div class="<?php echo $c->getPageWrapperClass() ?>">
-    
+
         <?php $view->inc('elements/header.php'); ?>
 
-        <main role="main">
+        <main role="main" class="mt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
