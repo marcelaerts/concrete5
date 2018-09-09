@@ -11,10 +11,17 @@
 <body>
 
     <div class="<?php echo $c->getPageWrapperClass() ?>">
-    
+
         <?php $view->inc('elements/header.php'); ?>
 
-        <main role="main">
+        <div class="page-header">
+            <?php
+            $a = new Area('PageHeader');
+            $a->display($c);
+            ?>
+        </div>
+
+        <main role="main" class="mt-5">
 
             <div class="container">
                 <div class="row">
