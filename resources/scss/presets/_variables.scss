@@ -1,1 +1,12 @@
-$primary-color: red;
+// import fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+// font-family
+$font-family-primary: 'Open Sans', sans-serif;
+
+// colors
+$primary: #35A0CD;
+
+$theme-colors: (
+    "primary": #35A0CD
+);

@@ -16,6 +16,30 @@
         }
     }
 
+    .ccm-block-page-list-page-entry-text {
+        background-color: $white;
+        padding: 1rem;
+    }
+
+    .ccm-block-page-list-title {
+        font-weight: 700;
+    }
+
+    .ccm-block-page-list-date {
+        font-size: 0.875rem;
+        font-style: italic;
+    }
+
+    .ccm-block-page-list-description {
+        margin: 0.625rem 0;
+    }
+
+    .ccm-block-page-list-page-entry-thumbnail {
+        img {
+            @extend .img-fluid;
+        }
+    }
+
     .ccm-block-page-list-read-more {
         @extend .btn;
         @extend .btn-primary;

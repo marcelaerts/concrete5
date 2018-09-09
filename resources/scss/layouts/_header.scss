@@ -1,0 +1,9 @@
+header.header {
+    background-color: $black;
+}
+
+.page-header {
+    img {
+        @extend .img-fluid;
+    }
+}

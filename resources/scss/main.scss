@@ -1,10 +1,14 @@
-// bootstrap
-@import "~bootstrap/scss/bootstrap";
-
 // presets
 @import "presets/variables";
 
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// components
+@import "components/buttons";
+
 // layouts
+@import "layouts/base";
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/navigation";
